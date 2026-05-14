@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#07071a" />
+
+  <title>Sawadogo Moussa — Développeur Web & Expert Tech polyvalent</title>
+  <meta name="description" content="Portfolio de Sawadogo Moussa : développeur web, analyste de données, infographe et consultant cybersécurité basé à Ouagadougou, Burkina Faso. Projets, expertises et contact." />
+  <meta name="author" content="Sawadogo Moussa" />
+  <meta name="keywords" content="Sawadogo Moussa, développeur web Burkina, freelance Ouagadougou, Puissance Tech, cybersécurité, analyse de données" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sawadogo Moussa — Développeur Web & Expert Tech" />
+  <meta property="og:description" content="Portfolio professionnel : dev web, data, infographie, cybersécurité." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+
+<body>
+
+  <!-- Grain & orbes d'ambiance -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb--blue"></div>
+    <div class="orb orb--magenta"></div>
+    <div class="orb orb--orange"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#hero" class="nav__brand" aria-label="Sawadogo Moussa — accueil">
+      <span class="nav__monogram" aria-hidden="true">M</span>
+      <span class="nav__name">Sawadogo<em>Moussa</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#a-propos">À propos</a>
+      <a href="#expertises">Expertises</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Me contacter →</a>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#a-propos">À propos</a>
+    <a href="#expertises">Expertises</a>
+    <a href="#projets">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__inner">
+
+      <!-- Colonne texte -->
+      <div class="hero__text">
+        <div class="hero__badge">
+          <span class="hero__pulse" aria-hidden="true"></span>
+          Disponible pour de nouvelles opportunités
+        </div>
+
+        <h1 class="hero__title">
+          Bonjour, je suis<br/>
+          <span class="hero__name">Sawadogo<br/><em>Moussa.</em></span>
+        </h1>
+
+        <p class="hero__role">
+          <span class="role-tag">Développeur Web</span>
+          <span class="role-sep">·</span>
+          <span class="role-secondary">Data · Infographie · Cybersécurité</span>
+        </p>
+
+        <p class="hero__lede">
+          Je conçois et développe des interfaces web élégantes et performantes. Basé à Ouagadougou,
+          je transforme des idées en produits numériques utiles, du site vitrine à la plateforme e-commerce.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projets" class="btn btn--primary">
+            Voir mes projets
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Me contacter</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num">5+</div>
+            <div class="stat__lbl">Projets<br/>livrés</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">4</div>
+            <div class="stat__lbl">Domaines<br/>d'expertise</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">1</div>
+            <div class="stat__lbl">Cert. en<br/>cybersécurité</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__lbl">Engagement<br/>qualité</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne avatar -->
+      <div class="hero__avatar-wrap">
+        <div class="avatar">
+          <div class="avatar__bg" aria-hidden="true"></div>
+          <div class="avatar__rings" aria-hidden="true">
+            <div class="ring ring--1"></div>
+            <div class="ring ring--2"></div>
+            <div class="ring ring--3"></div>
+          </div>
+          <div class="avatar__monogram">M</div>
+          <div class="avatar__chips" aria-hidden="true">
+            <span class="chip chip--top">🌐dev </span>
+            <span class="chip chip--right">📊 data</span>
+            <span class="chip chip--bottom">🔒 cyber</span>
+            <span class="chip chip--left">🎨 design</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="a-propos" class="about">
+    <div class="section-head">
+      <span class="section-head__kicker">— 01 / À propos</span>
+      <h2 class="section-head__title">L'<em>artisan</em> derrière le code.</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__text">
+        <p class="about__lead">
+          Passionné par la tech depuis toujours, j'ai construit mon expertise sur quatre piliers
+          complémentaires : le <strong>développement web</strong>, l'<strong>analyse de données</strong>,
+          l'<strong>infographie</strong> et la <strong>cybersécurité</strong>.
+        </p>
+        <p>
+          Cette polyvalence m'a permis de fonder <strong>Puissance Tech</strong>, ma propre structure
+          digitale à Ouagadougou, où je conçois des solutions complètes pour les entrepreneurs et
+          institutions sahéliennes. Aujourd'hui, je cherche à apporter ces compétences dans une
+          équipe ambitieuse, en tant que développeur web salarié.
+        </p>
+        <p>
+          Ma philosophie : <em>livrer vite, livrer propre, livrer utile.</em> Chaque ligne de code
+          que j'écris doit servir un objectif clair. Chaque pixel doit avoir une raison d'être.
+        </p>
+      </div>
+
+      <div class="about__values">
+        <div class="value">
+          <div class="value__icon">⚡</div>
+          <h4>Exigence</h4>
+          <p>Du détail dans chaque pixel, dans chaque ligne de code.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon">🎯</div>
+          <h4>Pragmatisme</h4>
+          <p>Le code doit servir le besoin, pas l'inverse.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon">🚀</div>
+          <h4>Agilité</h4>
+          <p>Délais courts, itérations rapides, communication claire.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon">🌍</div>
+          <h4>Souveraineté</h4>
+          <p>Construire des outils 100% adaptés au contexte africain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISES -->
+  <section id="expertises" class="expertise">
+    <div class="section-head">
+      <span class="section-head__kicker">— 02 / Expertises</span>
+      <h2 class="section-head__title">Quatre <em>spécialités</em>, une vision.</h2>
+      <p class="section-head__sub">Un profil polyvalent au service de produits numériques complets, du back-end à l'interface, en passant par la donnée et la sécurité.</p>
+    </div>
+
+    <div class="expertise__grid">
+
+      <article class="exp exp--featured">
+        <div class="exp__head">
+          <div class="exp__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 6 2 12l6 6M16 6l6 6-6 6M14 4l-4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="exp__num">01</div>
+        </div>
+        <h3 class="exp__title">Développement <em>Web</em></h3>
+        <p class="exp__desc">
+          Création de sites vitrine, e-commerce, plateformes SaaS et interfaces sur mesure.
+          HTML/CSS/JS modernes, design responsive, performance et accessibilité au cœur de chaque projet.
+        </p>
+        <div class="exp__skills">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive</span>
+          <span>SEO</span>
+          <span>UX/UI</span>
+        </div>
+      </article>
+
+      <article class="exp">
+        <div class="exp__head">
+          <div class="exp__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18M7 14l4-4 4 4 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="exp__num">02</div>
+        </div>
+        <h3 class="exp__title">Analyse de <em>données</em></h3>
+        <p class="exp__desc">
+          Conception de tableaux de bord, automatisation de reporting et nettoyage de données.
+          Transformer la donnée brute en décisions éclairées.
+        </p>
+        <div class="exp__skills">
+          <span>Excel avancé</span>
+          <span>Tableaux de bord</span>
+          <span>KPI</span>
+          <span>Reporting</span>
+        </div>
+      </article>
+
+      <article class="exp">
+        <div class="exp__head">
+          <div class="exp__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div class="exp__num">03</div>
+        </div>
+        <h3 class="exp__title">Infographie & <em>ebooks</em></h3>
+        <p class="exp__desc">
+          Conception de documents éditoriaux haut de gamme : ebooks, supports de formation,
+          identité visuelle, mise en page Word avancée pour produits numériques.
+        </p>
+        <div class="exp__skills">
+          <span>Mise en page</span>
+          <span>Ebooks</span>
+          <span>Identité visuelle</span>
+          <span>Charte graphique</span>
+        </div>
+      </article>
+
+      <article class="exp">
+        <div class="exp__head">
+          <div class="exp__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="exp__num">04</div>
+        </div>
+        <h3 class="exp__title">Cybersécurité <em>certifiée</em></h3>
+        <p class="exp__desc">
+          Consultant certifié en cybersécurité. Sensibilisation, audit de base, bonnes pratiques.
+          Expert en devenir, en formation continue sur les enjeux de sécurité numérique africaine.
+        </p>
+        <div class="exp__skills">
+          <span>Audit</span>
+          <span>Sensibilisation</span>
+          <span>Bonnes pratiques</span>
+          <span>Veille</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="projects">
+    <div class="section-head">
+      <span class="section-head__kicker">— 03 / Réalisations</span>
+      <h2 class="section-head__title">Une sélection de <em>projets</em>.</h2>
+      <p class="section-head__sub">Quelques-uns des projets que j'ai conçus et livrés. Chacun raconte une histoire et un défi relevé.</p>
+    </div>
+
+    <!-- Filtres -->
+    <div class="projects__filters" role="tablist" aria-label="Filtrer les projets">
+      <button class="filter filter--active" data-filter="all" role="tab">Tous</button>
+      <button class="filter" data-filter="web" role="tab">💻 Dev Web</button>
+      <button class="filter" data-filter="data" role="tab">📊 Data</button>
+      <button class="filter" data-filter="design" role="tab">🎨 Design</button>
+      <button class="filter" data-filter="cyber" role="tab">🔒 Cybersec</button>
+    </div>
+
+    <!-- Grille -->
+    <div class="projects__grid" id="projectsGrid">
+
+      <!-- Slamazon Gym -->
+      <article class="project" data-category="web">
+        <a href="https://slamazon-gym.vercel.app" target="_blank" rel="noopener" class="project__link">
+          <div class="project__visual project__visual--gym">
+            <div class="project__mockup">
+              <div class="mockup__bar">
+                <span></span><span></span><span></span>
+                <div class="mockup__url">slamazon-gym.vercel.app</div>
+              </div>
+              <div class="mockup__content mockup__content--gym">
+                <div class="mockup__hero">SLAMAZON<br/><em>GYM</em></div>
+                <div class="mockup__sub">Sport · Fitness · Bien-être</div>
+                <div class="mockup__btn">S'inscrire</div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">DÉVELOPPEMENT WEB</div>
+            <h3 class="project__title">Slamazon Gym</h3>
+            <p class="project__desc">Site vitrine pour une grande structure de sport fitness basée à Ouagadougou. Présentation des offres, équipements et programmes de coaching.</p>
+            <div class="project__tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action">Voir le site
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- CFPEM SST -->
+      <article class="project" data-category="web">
+        <a href="https://cfpem-sst-inter.vercel.app" target="_blank" rel="noopener" class="project__link">
+          <div class="project__visual project__visual--cfpem">
+            <div class="project__mockup">
+              <div class="mockup__bar">
+                <span></span><span></span><span></span>
+                <div class="mockup__url">cfpem-sst-inter.vercel.app</div>
+              </div>
+              <div class="mockup__content mockup__content--cfpem">
+                <div class="mockup__badge">QHSE · SST</div>
+                <div class="mockup__hero">CFPEM</div>
+                <div class="mockup__sub">Formation professionnelle</div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">DÉVELOPPEMENT WEB</div>
+            <h3 class="project__title">CFPEM — Centre de formation</h3>
+            <p class="project__desc">Site pour un centre de formation professionnelle de conduite tout gabarit et en QHSE & SST. Présentation des formations et inscriptions.</p>
+            <div class="project__tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action">Voir le site
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Puissance Tech -->
+      <article class="project project--featured" data-category="web">
+        <a href="https://github.com/PuissanceTech/Puissancetech" target="_blank" rel="noopener" class="project__link">
+          <div class="project__visual project__visual--pt">
+            <div class="project__mockup">
+              <div class="mockup__bar">
+                <span></span><span></span><span></span>
+                <div class="mockup__url">puissancetech</div>
+              </div>
+              <div class="mockup__content mockup__content--pt">
+                <div class="mockup__bulb">💡</div>
+                <div class="mockup__hero">Puissance<em>Tech</em></div>
+                <div class="mockup__sub">Agence digitale haut de gamme</div>
+                <div class="mockup__chips">
+                  <span>Sites</span><span>IA</span><span>Auto</span>
+                </div>
+              </div>
+            </div>
+            <div class="project__star">⭐ FEATURED</div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">DÉVELOPPEMENT WEB · BRANDING</div>
+            <h3 class="project__title">Puissance Tech — Agence digitale</h3>
+            <p class="project__desc">Site vitrine complet pour ma propre agence digitale. Design tech-luxe sombre, animations soignées, formulaire de commande à double sortie (email + WhatsApp), optimisé SEO local.</p>
+            <div class="project__tech">
+              <span>HTML5</span>
+              <span>CSS3 avancé</span>
+              <span>JavaScript</span>
+              <span>SEO</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action">Voir le code
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Boutique ebooks (sans lien externe, juste description) -->
+      <article class="project" data-category="web">
+        <div class="project__link project__link--static">
+          <div class="project__visual project__visual--boutique">
+            <div class="project__mockup">
+              <div class="mockup__bar">
+                <span></span><span></span><span></span>
+                <div class="mockup__url">boutique.puissancetech</div>
+              </div>
+              <div class="mockup__content mockup__content--boutique">
+                <div class="mockup__hero" style="font-size:1.6rem;">📚 Bibliothèque<br/>numérique</div>
+                <div class="mockup__chips">
+                  <span style="background:rgba(29,195,235,0.2);color:#1dc3eb;">Wave</span>
+                  <span style="background:rgba(255,105,0,0.2);color:#ff6900;">Orange</span>
+                  <span style="background:rgba(91,141,239,0.2);color:#5b8def;">Moov</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">E-COMMERCE · FULL-STACK</div>
+            <h3 class="project__title">Boutique ebooks Puissance Tech</h3>
+            <p class="project__desc">Plateforme e-commerce complète avec panneau admin sécurisé, gestion des produits, paiement mobile money intégré (Wave, Orange Money, Moov Money) via workflow WhatsApp.</p>
+            <div class="project__tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>LocalStorage</span>
+              <span>WhatsApp API</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action project__action--muted">Projet privé</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ebook AES -->
+      <article class="project" data-category="design">
+        <div class="project__link project__link--static">
+          <div class="project__visual project__visual--ebook">
+            <div class="ebook-mockup">
+              <div class="ebook-mockup__bar ebook-mockup__bar--top">
+                <span style="background:#009639;"></span>
+                <span style="background:#FCD116;"></span>
+                <span style="background:#CE1126;"></span>
+              </div>
+              <div class="ebook-mockup__content">
+                <div class="ebook-mockup__kicker">CULTURE GÉNÉRALE</div>
+                <div class="ebook-mockup__title">AES</div>
+                <div class="ebook-mockup__sub">Préparation concours</div>
+                <div class="ebook-mockup__year">2026</div>
+              </div>
+              <div class="ebook-mockup__bar ebook-mockup__bar--bottom">
+                <span style="background:#009639;"></span>
+                <span style="background:#FCD116;"></span>
+                <span style="background:#CE1126;"></span>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">INFOGRAPHIE · ÉDITION</div>
+            <h3 class="project__title">Ebook Culture Générale AES</h3>
+            <p class="project__desc">Conception éditoriale et infographique d'un ebook de 52 pages avec 245 questions-réponses commentées. Mise en page Word avancée, cohérence visuelle aux couleurs de la Confédération AES.</p>
+            <div class="project__tech">
+              <span>Word avancé</span>
+              <span>Mise en page</span>
+              <span>Édition</span>
+              <span>Recherche</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action project__action--muted">52 pages · 245 Q/R</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dashboard Excel -->
+      <article class="project" data-category="data">
+        <div class="project__link project__link--static">
+          <div class="project__visual project__visual--data">
+            <div class="dashboard-mockup">
+              <div class="dashboard-mockup__header">
+                <div class="dashboard-mockup__title">📊 Tableau de bord</div>
+                <div class="dashboard-mockup__date">Q4 2025</div>
+              </div>
+              <div class="dashboard-mockup__kpis">
+                <div class="kpi"><div class="kpi__val" style="color:#00d4ff;">+24%</div><div class="kpi__lbl">Ventes</div></div>
+                <div class="kpi"><div class="kpi__val" style="color:#25d366;">98%</div><div class="kpi__lbl">Satisfact.</div></div>
+                <div class="kpi"><div class="kpi__val" style="color:#ff6b35;">-12%</div><div class="kpi__lbl">Coûts</div></div>
+              </div>
+              <div class="dashboard-mockup__chart">
+                <div class="bar" style="height:30%;background:linear-gradient(180deg,#3a5cff,transparent);"></div>
+                <div class="bar" style="height:55%;background:linear-gradient(180deg,#3a5cff,transparent);"></div>
+                <div class="bar" style="height:42%;background:linear-gradient(180deg,#00d4ff,transparent);"></div>
+                <div class="bar" style="height:75%;background:linear-gradient(180deg,#d946ef,transparent);"></div>
+                <div class="bar" style="height:90%;background:linear-gradient(180deg,#ff6b35,transparent);"></div>
+                <div class="bar" style="height:65%;background:linear-gradient(180deg,#f72585,transparent);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">ANALYSE DE DONNÉES</div>
+            <h3 class="project__title">Tableau de bord de gestion</h3>
+            <p class="project__desc">Système Excel avancé d'analyse de performance commerciale : suivi des ventes, taux de satisfaction, coûts opérationnels, avec graphiques dynamiques et alertes automatiques.</p>
+            <div class="project__tech">
+              <span>Excel avancé</span>
+              <span>Formules</span>
+              <span>TCD</span>
+              <span>Graphiques</span>
+              <span>VBA</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action project__action--muted">Projet client privé</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Certification Cybersec -->
+      <article class="project" data-category="cyber">
+        <div class="project__link project__link--static">
+          <div class="project__visual project__visual--cert">
+            <div class="cert-badge">
+              <div class="cert-badge__shield">
+                <svg viewBox="0 0 100 120" fill="none">
+                  <path d="M50 5 L90 22 V60 C90 88 72 105 50 115 C28 105 10 88 10 60 V22 Z" fill="url(#shieldGrad)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                  <defs>
+                    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#3a5cff"/>
+                      <stop offset="50%" stop-color="#7c3aed"/>
+                      <stop offset="100%" stop-color="#d946ef"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="cert-badge__lock">🔒</div>
+              </div>
+              <div class="cert-badge__text">
+                <div class="cert-badge__kicker">CERTIFIÉ</div>
+                <div class="cert-badge__title">Cybersécurité</div>
+                <div class="cert-badge__year">2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__cat">CYBERSÉCURITÉ</div>
+            <h3 class="project__title">Certification Consultant Cybersécurité</h3>
+            <p class="project__desc">Certification professionnelle attestant des compétences en sécurité numérique : sensibilisation aux risques, bonnes pratiques d'hygiène informatique, audit de base et veille technologique.</p>
+            <div class="project__tech">
+              <span>Audit</span>
+              <span>Sensibilisation</span>
+              <span>Bonnes pratiques</span>
+              <span>Veille</span>
+            </div>
+            <div class="project__links">
+              <span class="project__action project__action--muted">Expert en devenir</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Empty state filtre -->
+    <div class="projects__empty hidden" id="projectsEmpty">
+      <div class="projects__empty-icon">🔍</div>
+      <p>Aucun projet dans cette catégorie pour l'instant.<br/>D'autres réalisations à venir !</p>
+    </div>
+  </section>
+
+  <!-- PARCOURS / TIMELINE -->
+  <section id="parcours" class="journey">
+    <div class="section-head">
+      <span class="section-head__kicker">— 04 / Parcours</span>
+      <h2 class="section-head__title">Un <em>cheminement</em> pluridisciplinaire.</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline__item">
+        <div class="timeline__date">2025 — Aujourd'hui</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <h3>Fondateur & Développeur — Puissance Tech</h3>
+          <p>Conception et livraison de sites web, ebooks éducatifs, plateformes e-commerce et solutions d'automatisation pour clients sahéliens. Direction artistique, développement et relation client.</p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__date">2025</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <h3>Certification — Consultant en Cybersécurité</h3>
+          <p>Formation et certification en sécurité numérique. Renforcement des compétences en sensibilisation aux risques cyber et audit de bonnes pratiques.</p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__date">2024 — 2025</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <h3>Spécialisation — Développement Web & Data</h3>
+          <p>Apprentissage approfondi des standards web modernes (HTML5, CSS3 avancé, JavaScript ES6+) et de l'analyse de données via Excel avancé. Premières réalisations clients.</p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__date">Avant 2024</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <h3>Bases techniques & polyvalence</h3>
+          <p>Découverte progressive des univers tech : programmation, infographie, sécurité numérique. Construction d'un profil polyvalent au service de projets concrets.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact__inner">
+      <div class="contact__intro">
+        <span class="section-head__kicker">— 05 / Contact</span>
+        <h2 class="section-head__title contact__title">Travaillons <em>ensemble.</em></h2>
+        <p class="contact__lede">
+          Vous recrutez un développeur web rigoureux et polyvalent ? Vous avez un projet à concrétiser ?
+          Discutons-en. Réponse garantie sous 24h.
+        </p>
+
+        <div class="contact__channels">
+          <a href="mailto:Puissancetechsm@gmail.com" class="channel">
+            <div class="channel__icon">✉</div>
+            <div>
+              <div class="channel__label">Email</div>
+              <div class="channel__value">Puissancetechsm@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+22655498333" class="channel">
+            <div class="channel__icon">📞</div>
+            <div>
+              <div class="channel__label">Téléphone</div>
+              <div class="channel__value">+226 55 49 83 33</div>
+            </div>
+          </a>
+          <a href="https://wa.me/22655498333" target="_blank" rel="noopener" class="channel">
+            <div class="channel__icon">💬</div>
+            <div>
+              <div class="channel__label">WhatsApp</div>
+              <div class="channel__value">+226 55 49 83 33</div>
+            </div>
+          </a>
+          <a href="https://github.com/PuissanceTech" target="_blank" rel="noopener" class="channel">
+            <div class="channel__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.17C5.7 21.31 5 19.27 5 19.27c-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+            </div>
+            <div>
+              <div class="channel__label">GitHub</div>
+              <div class="channel__value">github.com/PuissanceTech</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form__head">
+          <h3>Envoyez-moi un message</h3>
+          <p>Pour une demande rapide ou un échange professionnel.</p>
+        </div>
+
+        <div class="form__group">
+          <label for="cName">Votre nom <span>*</span></label>
+          <input type="text" id="cName" name="name" required placeholder="Ex. Aïssa Ouédraogo" />
+        </div>
+
+        <div class="form__row">
+          <div class="form__group">
+            <label for="cEmail">Email <span>*</span></label>
+            <input type="email" id="cEmail" name="email" required placeholder="vous@exemple.com" />
+          </div>
+          <div class="form__group">
+            <label for="cSubject">Objet</label>
+            <input type="text" id="cSubject" name="subject" placeholder="Recrutement, projet…" />
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="cMessage">Votre message <span>*</span></label>
+          <textarea id="cMessage" name="message" rows="5" required placeholder="Décrivez votre besoin, votre projet, ou votre opportunité…"></textarea>
+        </div>
+
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary btn--full">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            Envoyer le message
+          </button>
+        </div>
+
+        <p class="form__notice">Le message s'enverra via votre application email.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__monogram">M</span>
+        <span>Sawadogo<em>Moussa</em></span>
+      </div>
+      <p>© <span id="year"></span> Sawadogo Moussa · Conçu et codé avec exigence à Ouagadougou.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
