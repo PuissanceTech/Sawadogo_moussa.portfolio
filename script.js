@@ -1,7 +1,3 @@
-/* ============================================
-   SAWADOGO MOUSSA — Portfolio Script
-   ============================================ */
-
 (() => {
   'use strict';
 
@@ -47,9 +43,6 @@
     toastTimer = setTimeout(() => toast.classList.remove('show'), duration);
   }
 
-  /* ============================================
-     FILTRES PROJETS
-     ============================================ */
   const filters = document.querySelectorAll('.filter');
   const projects = document.querySelectorAll('.project');
   const emptyState = document.getElementById('projectsEmpty');
@@ -86,9 +79,6 @@
     });
   });
 
-  /* ============================================
-     FORMULAIRE DE CONTACT
-     ============================================ */
   const form = document.getElementById('contactForm');
 
   form.addEventListener('submit', (e) => {
@@ -133,9 +123,6 @@
     showToast('📧 Ouverture de votre application email…', 'success');
   });
 
-  /* ============================================
-     REVEAL ON SCROLL
-     ============================================ */
   const revealTargets = document.querySelectorAll(
     '.section-head, .about__text, .about__values, .exp, .project, .timeline__item, .contact__intro, .contact__form'
   );
@@ -159,9 +146,6 @@
     revealTargets.forEach(el => el.classList.add('visible'));
   }
 
-  /* ============================================
-     SMOOTH SCROLL POUR LES ANCRES
-     ============================================ */
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
